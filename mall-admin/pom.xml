@@ -33,5 +33,14 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <!-- maven plugin在jar包中加入启动类信息 -->
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
