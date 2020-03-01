@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("admin/goodsDemo")
+@RequestMapping("admin/goods")
 public class GoodsDemoController {
 
     @Autowired
     private GoodsDemoService demoService;
 
-    @GetMapping("hello")
+    @GetMapping("demo")
     public DemoVo hello(){
         return demoService.getDemo();
     }
